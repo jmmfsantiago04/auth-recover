@@ -37,7 +37,7 @@ export async function sendPasswordReset(email: string) {
     console.log('Generated reset link:', resetLink); // Debug point 7
 
     await resend.emails.send({
-      from: 'noreply@reset.password.com',
+      from: 'noreply@authrecover.com',
       to: email,
       subject: 'Password Reset Request',
       html: `<p>You requested a password reset. Click the link below to reset your password:</p>

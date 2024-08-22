@@ -17,7 +17,7 @@ export async function sendUsername(email: string) {
     }
 
     await resend.emails.send({
-      from: 'noreply@yourdomain.com',
+      from: 'noreply@authrecover.com',
       to: email,
       subject: 'Username Recovery',
       html: `<p>Your username is: <strong>${user.username}</strong></p>`,
